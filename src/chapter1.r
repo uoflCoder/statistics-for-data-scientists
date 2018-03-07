@@ -1,4 +1,13 @@
 # packages needed for chapter 1
+install.packages('dplyr')
+install.packages('tidyr')
+install.packages('ggplot2')
+install.packages('vioplot')
+install.packages('ascii')
+install.packages('corrplot')
+install.packages('descr')
+
+
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -8,7 +17,7 @@ library(corrplot)
 library(descr)
 
 # Import the datasets needed for chapter 1
-PSDS_PATH <- file.path('~', 'statistics-for-data-scientists')
+PSDS_PATH <- file.path('~', 'Github', 'statistics-for-data-scientists')
 dir.create(file.path(PSDS_PATH, 'figures'))
 
 state <- read.csv(file.path(PSDS_PATH, 'data', 'state.csv'))

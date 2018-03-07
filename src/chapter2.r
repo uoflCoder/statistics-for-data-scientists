@@ -1,7 +1,7 @@
 library(boot)
 library(ggplot2)
 
-PSDS_PATH <- file.path('~', 'statistics-for-data-scientists')
+PSDS_PATH <- file.path('~', 'Github', 'statistics-for-data-scientists')
 
 loans_income <- read.csv(file.path(PSDS_PATH, 'data', 'loans_income.csv'))[,1]
 sp500_px <- read.csv(file.path(PSDS_PATH, 'data', 'sp500_px.csv'))
