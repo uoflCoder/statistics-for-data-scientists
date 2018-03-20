@@ -6,7 +6,7 @@ install.packages('vioplot')
 install.packages('ascii')
 install.packages('corrplot')
 install.packages('descr')
-
+install.packages('matrixStats')
 
 library(dplyr)
 library(tidyr)
@@ -15,6 +15,7 @@ library(vioplot)
 library(ascii)
 library(corrplot)
 library(descr)
+library(matrixStats)
 
 # Import the datasets needed for chapter 1
 PSDS_PATH <- file.path('~', 'Github', 'statistics-for-data-scientists')
@@ -40,7 +41,7 @@ median(state[["Population"]])
 
 ## Code snippet 1.2
 mean(state[["Murder.Rate"]])
-library("matrixStats")
+
 weighted.mean(state[["Murder.Rate"]], w=state[["Population"]])
 
 ## Code snippet 1.3
